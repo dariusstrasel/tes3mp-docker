@@ -24,7 +24,9 @@ RUN ln -s /data/tes3mp-server-default.cfg /home/tes3mp/TES3MP/tes3mp-server-defa
 	ln -s /data/config /home/tes3mp/.config/openmw && \
 	ln -s /data/share /home/tes3mp/.local/share/openmw
 
+# TCP optional?
 EXPOSE 25565
+EXPOSE 25565/udp
 
 USER tes3mp
 
