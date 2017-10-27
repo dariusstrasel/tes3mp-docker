@@ -30,7 +30,9 @@ EXPOSE 25565/udp
 # Set up core dumps
 RUN echo '* soft core unlimited' >> /etc/security/limits.conf
 RUN echo '* hard core unlimited' >> /etc/security/limits.conf
-RUN echo '/data/core.%e.%p.%t' > /proc/sys/kernel/core_pattern
+
+# Requires --privileged :(
+# RUN echo '/data/core.%e.%p.%t' > /proc/sys/kernel/core_pattern
 
 USER tes3mp
 
