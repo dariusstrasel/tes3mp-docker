@@ -10,7 +10,7 @@ USER tes3mp
 
 WORKDIR /home/tes3mp
 
-RUN wget https://github.com/TES3MP/openmw-tes3mp/releases/download/tes3mp-0.6.1/tes3mp-GNU.Linux-x86_64-release-0.6.1-f532ab241d-p7.tar.gz
+RUN wget https://github.com/TES3MP/openmw-tes3mp/releases/download/tes3mp-0.6.2/tes3mp-GNU.Linux-x86_64-release-0.6.2-hotfixed.tar.gz
 
 RUN tar -xzf *.tar.gz
 
