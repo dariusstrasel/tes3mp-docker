@@ -1,4 +1,4 @@
-FROM ubuntu:zesty
+FROM ubuntu:artful
 
 RUN apt update
 
